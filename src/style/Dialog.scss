@@ -1,0 +1,51 @@
+.dialog{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-Color: rgba(0,0,0,0.5);
+        &_box{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #f9f1e7;
+            border-radius: 15px;
+            box-shadow: rgba(0,0,0,0.5);
+            padding: 50px;
+        }
+        &_action{
+            display: flex;
+            align-items: center;
+            color: white;
+            .btn_yes{
+                background-color: green;
+                padding: 10px 20px;
+                margin-right: 40px;
+                border: none;
+                font-size: 1.6rem;
+                color: white;
+                border-radius: 15px;
+                cursor: pointer;
+            }
+            .btn_no{
+                background-color: red;
+                padding: 10px 20px;
+                border-radius: 15px;
+                margin-left: 40px;
+                border: none;
+                font-size: 1.6rem;
+                color: white;
+                cursor: pointer;
+            }
+            button:hover{
+                opacity: 0.5;
+            }
+        }
+}

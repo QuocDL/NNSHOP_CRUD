@@ -1,0 +1,91 @@
+@use './mixin';
+
+
+.footer {
+    &_end {
+        padding: 43px 0;
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    &_inner {
+        &_list {
+            margin-top: 48px;
+            border-bottom: 1px solid #d9d9d9;
+            padding-bottom: 48px;
+            @include mixin.gridCols(4, 10px, 10px);
+
+            &__information {
+                margin-right: 155px;
+
+                h3 {
+                    font-size: 2.4rem;
+                    font-weight: 700;
+                }
+
+                p {
+                    margin-top: 53px;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: #9f9f9f;
+                    width: 285px;
+                }
+            }
+
+            &__link {
+                h3 {
+                    font-size: 1.6rem;
+                    color: #9f9f9f;
+                    font-weight: 400;
+                }
+
+                ul {
+                    margin-top: 55px;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 46px;
+
+                    a {
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            &__newsletter {
+                h3 {
+                    font-weight: 500;
+                    font-size: 1.6rem;
+                    color: #9f9f9f;
+                }
+
+                &__formSubmit {
+                    margin-top: 53px;
+                    display: flex;
+                    gap: 11px;
+                    align-items: center;
+
+                    input {
+                        border: none;
+                        border-bottom: 1px solid black;
+                        color: #9f9f9f;
+                        background: transparent;
+                        padding-bottom: 5px;
+                    }
+
+                    button {
+                        border: none;
+                        background: transparent;
+                        font-weight: 500;
+                        font-size: 1.4rem;
+                        border-bottom: 1px solid black;
+                        padding-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

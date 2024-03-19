@@ -1,0 +1,42 @@
+@use "mixin";
+$font-poppins: "Poppins", sans-serif;
+
+.admin_list_inner{
+    max-width: 980px;
+}
+.inputType {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    input {
+            height: 75px;
+            border: 1px solid #9f9f9f;
+            border-radius: 10px;
+            padding: 0 12px;
+        }
+                  label {
+                      font-size: 1.8rem;
+                      font-weight: 700;
+                  }
+}
+.error{
+    color: red;
+}
+.div_btn{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    .button {
+            padding: 10px 20px;
+            cursor: pointer;
+            color: white;
+            background-color: blue;
+            border: none;
+            border-radius: 10px;
+        }
+        .button:hover{
+            opacity: 0.7;
+        }
+}

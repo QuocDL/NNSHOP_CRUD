@@ -1,0 +1,11 @@
+@mixin gridCols($cols, $gapY, $gapX) {
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    gap: $gapY $gapX;
+}
+
+@mixin gridRows($cols, $gapY, $gapX) {
+    display: grid;
+    grid-template-rows: repeat($cols, 1fr);
+    gap: $gapY $gapX;
+}
